@@ -69,5 +69,27 @@ public enum Nationality {
 	CYP,//Cyprus
 	CZE,//Czechia
 	
+	DNK,//Denmark
+	DJI,//Djibouti
+	DMA,//Dominica
+	DOM,//Dominican Republic
+	ECU,//Ecuador
+	EGY,//Egypt
+	SLV,//El Salvador
+	GNQ,//Equatiorial Guinea
+	ERI,//Eritrea
+	EST,//Estonia
+	ETH,//Ethiopia
+	
+	FLK,//Falklands
+	FRO,//Faroe
+	FJI,//Fiji
+	FIN,//Finland
+	FRA,//France
+	GUF,//French Guiana
+	PYF,//French Polynesia
+	ATF,//French Southern Territories
+	
+	
 	
 }

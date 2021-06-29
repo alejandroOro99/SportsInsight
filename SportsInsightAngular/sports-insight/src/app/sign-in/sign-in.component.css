@@ -1,0 +1,10 @@
+p   {
+    color: blue;
+}
+
+@media (min-width: 100em){
+
+    p {
+        color: grey;
+    }
+}
