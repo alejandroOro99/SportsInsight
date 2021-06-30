@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { SignInService } from '../sign-in.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -7,16 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
-  constructor() { }
+  constructor(private httpClient: HttpClient, private signInService: SignInService) { }
 
-  private hello = 10;
+  private hello = "";
 
   ngOnInit(): void {
-    if (this.hello === 10) {
-      console.log("nice");
-    } else {
-      console.log("not nice");
-    }
+    this.signInService.signIn().subscribe(res => {
+      console.log(res);
+      this.hello = res;
+    });
   }
 
+  public connect(): void {
+
+    console.log(this.hello);
+  }
 }
+
+
