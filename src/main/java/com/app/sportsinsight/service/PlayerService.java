@@ -9,6 +9,6 @@ public interface PlayerService {
 	//CRUD
 	Player add(Player player);
 	Optional<Player> getById(int id);
-	void delete(int id);
-	Player update();
+	void deleteById(int id);
+	Player updateById(int id, Player player);
 }

@@ -29,15 +29,15 @@ public class PlayerServiceImplementation implements PlayerService{
 	}
 
 	@Override
-	public void delete(int id) {
+	public void deleteById(int id) {
 		// TODO Auto-generated method stub
 		playerRepository.deleteById(id);
 	}
 
 	@Override
-	public Player update() {
+	public Player updateById(int id, Player player) {
 		// TODO Auto-generated method stub
-		return null;
+		return playerRepository.save(player);
 	}
 
 }
