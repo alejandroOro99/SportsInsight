@@ -21,7 +21,7 @@ public class Player {
 	private int age;
 	//private Sport sport;
 	private Nationality nationality;
-	private double value;
+	private double marketValue;
 	
 	
 }
